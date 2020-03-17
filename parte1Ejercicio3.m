@@ -31,9 +31,67 @@ disp("Resultado:");
 disp(resultado);
 disp("\n");
 
-
 disp("vi)");
 resultado = 0.2-0.3+0.1;
 disp("Resultado:");
 disp(resultado);
 disp("\n");
+
+
+disp("vii)");
+resultado = (0.1+0.2-0.3)/(0.2-0.3+0.1);
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("viii)");
+resultado = -1*0;
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("ix)");
+resultado = 1/0;
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("x)");
+resultado = -1/0;
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("xi)");
+resultado = 0/0;
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("xii)");
+resultado = 2*3+4/(1/0);
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("xiii)");
+resultado = 2*3+(4/(0/0));
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+disp("xiv)");
+resultado = 2*3+(4/(0/0))*0;
+disp("Resultado:");
+disp(resultado);
+disp("\n");
+
+
+
