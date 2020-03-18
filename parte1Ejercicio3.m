@@ -47,14 +47,14 @@ disp("viii)");
 resultado = -1*0;
 disp("Resultado:");
 disp(resultado);
-disp("Esperaba 0. Devolvio -0\n");
+disp("Esperaba 0. Devolvio -0. Esto muestra que hay un 0 con bit de signo positivo y otro con bit de signo negativo. Esto puede ser útil porque puede corresponder a un redondeo a 0 o un subflujo pero dónde se desea recordar que el redondeo vino del lado de los negativos. \n");
 
 
 disp("ix)");
 resultado = 1/0;
 disp("Resultado:");
 disp(resultado);
-disp("Esperaba una falla y hubo sobreflujo. No es posible realizar dicha operacion.\n");
+disp("Esperaba una falla y hubo sobreflujo. Nos devolvió 'Inf'. Inf corresponde a un sobreflujo por la derecha (es decir un número que excede al mayor número representable). Informalmente se lo llama "infinito" pero no es más que lo que dije antes: un número demasiado grande de hecho 1/0 en una de esas está representando 1 dividido un número tan cerca de 0 que se redondeó a 0, pero realmente es positivo (aunque muy chico). El estandar IEEE 754 nos permite operar de manera que 5/Inf = 0.\n");
 
 
 disp("x)");
@@ -68,7 +68,7 @@ disp("xi)");
 resultado = 0/0;
 disp("Resultado:");
 disp(resultado);
-disp("Esperaba error y salto NaN. Hace referencia a resultados que no tienen resultado numérico.\n");
+disp("Esperaba error y salto NaN. NaN se refiere a "Not a Number" ("No es un numero"). El NaN se propaga de modo que si en cualquier lugar de la cuenta hay un NaN se devuelve NaN haya lo que haya en el resto de la cuenta.\n");
 
 
 disp("xii)");
