@@ -39,6 +39,7 @@ disp("\n")
 
 f = @(x) (9 * (x.^3)) + (3 * x);
 g = @(x) (6 * (x.^2)) + 2;
+h = @(x) f(x) - g(x);
 
 disp("Con 1000 iteraciones...")
 
@@ -57,15 +58,16 @@ disp("\n")
 
 f = @(x) cos(x);
 g = @(x) x;
+h = @(x) f(x) - g(x);
 
-disp("Con 9 iteraciones...")
+disp("Con 10 iteraciones...")
 
-x0 = bisec(h,0,pi,9);
+x0 = bisec(h,0,pi,10);
 
 disp(["x0 = ", num2str(x0)]);
 disp(["h(x0) =", mat2str(h(x0))]);
 disp(["f(x0) =", mat2str(f(x0))]);
 disp(["g(x0) =", mat2str(g(x0))]);
 
-disp("Al tomar 8 pasos, me daba una diferencia mayor a 0.001. Probe con nueve y me dió esa diferencia (h(x0))\n")
+disp("Al tomar 9 pasos, me daba una diferencia mayor a 0.001. Probe con 10 y me dió esa diferencia (h(x0))\n")
 disp("\n")
