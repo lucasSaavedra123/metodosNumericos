@@ -34,7 +34,7 @@ disp(["g(x0) =", mat2str(g(x0))]);
 disp("\n")
 input("Pulsar ENTER para continuar con el b)");
 disp("\n")
-disp("b) ESTA EN DUDA")
+disp("b)")
 disp("\n")
 
 f = @(x) (9 * (x.^3)) + (3 * x);

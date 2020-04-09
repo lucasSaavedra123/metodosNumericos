@@ -8,7 +8,7 @@ function solucion = NR2(h, dh, x1, alfa)
   xn = x1;
   
   while( contadorDePasos < 25 && abs(h(xn)) >= alfa )
-    xn = xn - (h(xn)/dh(xn));
+    xn = xn - inv(dh(xn)) * (h(xn));
     contadorDePasos += 1;
   endwhile
     
