@@ -8,12 +8,12 @@ function solucion = NR_ap(h, x1, n, epsilon)
   
   xn = x1;
   numeroDePaso = 0;
-  
+
   while numeroDePaso < n && derivadaAproximada(h,xn,epsilon) != 0
     xn = xn - h(xn)/derivadaAproximada(h,xn,epsilon);
     numeroDePaso+=1;
   endwhile
-  
+
   solucion = xn;
 
   
