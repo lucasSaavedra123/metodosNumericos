@@ -4,7 +4,7 @@ disp("a)");
 disp("\n");
 
 imagen = imread('lenna.bmp');
-imagenNueva = comprimirImagen(imagen,0.005,0.005,0.99);
+imagenNueva = comprimirImagen(imagen,1,1,0.005);
 
 subplot(1,2,1);
 image(uint8(imagen));
